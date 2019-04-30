@@ -1,6 +1,5 @@
 import urllib.request
 import re
-import sys
 import numpy as np
 import matplotlib.pyplot as plt
 
@@ -101,7 +100,7 @@ if find == 1:
     no_repead = sorted(no_repead)
 
     # count the # of each year
-    for y in range(aList[0], aList[len(aList)-1]+1):
+    for y in no_repead:
         count_a.append(aList.count(y))
 
     # print(count_a)
